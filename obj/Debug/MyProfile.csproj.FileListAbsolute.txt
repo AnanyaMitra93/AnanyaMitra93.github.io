@@ -1,0 +1,9 @@
+F:\MyProfile\MyProfile\MyProfile\bin\MyProfile.dll.config
+F:\MyProfile\MyProfile\MyProfile\bin\MyProfile.dll
+F:\MyProfile\MyProfile\MyProfile\bin\MyProfile.pdb
+F:\MyProfile\MyProfile\MyProfile\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MyProfile\MyProfile\MyProfile\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MyProfile\MyProfile\MyProfile\obj\Debug\MyProfile.csprojResolveAssemblyReference.cache
+F:\MyProfile\MyProfile\MyProfile\obj\Debug\MyProfile.csproj.CoreCompileInputs.cache
+F:\MyProfile\MyProfile\MyProfile\obj\Debug\MyProfile.dll
+F:\MyProfile\MyProfile\MyProfile\obj\Debug\MyProfile.pdb

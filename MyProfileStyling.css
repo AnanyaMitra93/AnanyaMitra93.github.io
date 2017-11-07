@@ -1,0 +1,272 @@
+﻿body {
+    background-image: url('Pictures/background.jpg');
+    background-repeat: repeat;
+}
+
+/*Navigation Bar*/
+
+#navBarName {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    background-image: url(Pictures/pattern.jpg);
+    background-repeat: repeat;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: teal;
+    font-family: Courier New, Courier, monospace;
+    font-weight: 500;
+}
+
+#myNavBar {
+    width: 220px;
+    background-color: lightgray;
+    z-index: 10;
+    box-shadow: 6px 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+#myNavBar2 {
+    position: fixed;
+    background-color: lightgray;
+    z-index: 3;
+}
+
+/*Links on the navigation bar*/
+
+#toHome span {
+    color: darkblue;
+}
+
+#toHome.active, #toHome:hover {
+    background-color: darkgray;
+    border-left: 3px solid darkblue;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+#toAboutMe span {
+    color: teal;
+}
+
+#toAboutMe.active, #toAboutMe:hover {
+    background-color: darkgray;
+    border-left: 3px solid teal;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#toEducation span {
+    color: orangered;
+}
+
+#toEducation.active, #toEducation:hover {
+    background-color: darkgray;
+    border-left: 3px solid orangered;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#toTechnology span {
+    color: maroon;
+}
+
+#toTechnology.active, #toTechnology:hover {
+    background-color: darkgray;
+    border-left: 3px solid maroon;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#toProject span {
+    color: brown;
+}
+
+#toProject.active, #toProject:hover {
+    background-color: darkgray;
+    border-left: 3px solid brown;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#toContact span {
+    color: purple;
+}
+
+#toContact.active, #toContact:hover {
+    background-color: darkgray;
+    border-left: 3px solid purple;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Main Content of the page*/
+
+#main {
+    margin-left: 220px;
+}
+
+/*The first page i.e the home page*/
+
+#homePage {
+    height: 100vh;
+    background-image: url('Pictures/intro.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+#homeHeading {
+    color: #ffffff;
+    padding-top: 70px;
+    padding-left: 60px;
+    font-family: 'Courier New';
+    font-size: 24px;
+}
+
+#homeSpan1 {
+    background-color: darkslateblue;
+    padding:5px;
+}
+
+#knowMore {
+    margin-left: 60px;
+    position: absolute;
+    top: 48%;
+    background-color: lightgray;
+    padding: 10px;
+    opacity: 0.7;
+    font-family: 'Courier New';
+}
+
+#knowMore:hover {
+    opacity: 0.5;
+}
+
+#homeSpan2 {
+    text-decoration: underline;
+    text-decoration-color: darkslateblue;
+}
+
+/*The headings of each section*/
+
+.headingLarge {
+    margin-bottom: 60px;
+    margin-top: 0;
+    padding: 30px 55px;
+    color: #ffffff;
+    font-weight: 200;
+    background-color: darkslateblue;
+}
+
+#introduction {
+    position: absolute;
+    bottom: 50px;
+    padding-left: 60px;
+    padding-top: 60px;
+    font-family: 'Courier New';
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*The about me page*/
+
+#profilePic {
+    border: 10px solid #f1f1f1;
+    margin-bottom: 60px;
+    width: 300px;
+    height: 300px;
+    opacity: 0.8;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+    #profilePic:hover {
+        opacity: 1.0;
+        box-shadow: 6px 6px 20px 0 rgba(0, 0, 0, 0.4);
+    }
+
+/*The page about academic details*/
+
+#education {
+    padding-bottom: 50px;
+}
+
+.thumbnail {
+    width: 250px;
+    height: 335px;
+    border: none;
+    border-radius: 0;
+    box-shadow: 6px 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+    .thumbnail:hover {
+        box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+#thumbnailText1 {
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: #2d2d30;
+    padding-top: 22px;
+    padding-bottom: 16px;
+}
+
+#thumbnailText2 {
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: #2d2d30;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+#thumbnailText3 {
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: #2d2d30;
+    padding-top: 5px;
+}
+
+/*The page with the known technologies*/
+
+.card {
+    width: 250px;
+    box-shadow: 6px 6px 20px 0 rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+#cardContainer {
+    padding: 2px 16px;
+}
+
+.cardHolders {
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.holdProgress {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ffffff;
+}
+
+/*page with contact details*/
+
+#contact {
+    font-size: 15px;
+}
+
+/*page ending i.e the footer*/
+
+#footer {
+    background-color: black;
+    padding: 32px;
+}
+
+#footerText {
+    color: #ffffff;
+}

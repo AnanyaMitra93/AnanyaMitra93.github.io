@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <script src="scripts/jquery-3.2.1.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/jquery-ui-1.12.1.js"></script>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/w3.css" rel="stylesheet" />
+
+    <script src="MyProfileJavascript.js"></script>
+    <link href="MyProfileStyling.css" rel="stylesheet" />
+
+</head>
+
+
+<body data-spy="scroll">
+
+    <!--Navigation bar-->
+
+    <div class="w3-sidebar w3-bar-block w3-collapse" id="myNavBar">
+        <button class="w3-bar-item w3-button w3-xlarge w3-hide-large" id="myNavButton1" onclick="navbar_close()"> &#9776; </button>
+
+        <div id="navBarName">
+            <span style="color: darkslateblue;font-size:x-large">Ananya Mitra</span><br /><br />
+            <span style="font-size:large">Program Analyst Trainee</span>
+        </div>
+
+        <ul class="nav">
+            <li id="toHome"><a href="#homePage" class="w3-bar-item w3-button" onclick="navbar_close()"><span class="glyphicon glyphicon-home"></span> &ensp; HOME</a></li>
+            <li id="toAboutMe"><a href="#aboutMe" class="w3-bar-item w3-button" onclick="navbar_close()"><span class="glyphicon glyphicon-user"></span> &ensp; ABOUT ME</a></li>
+            <li id="toEducation"><a href="#education" class="w3-bar-item w3-button" onclick="navbar_close()"><span class="glyphicon glyphicon-education"></span> &ensp; EDUCATION</a></li>
+            <li id="toTechnology"><a href="#technology" class="w3-bar-item w3-button" onclick="navbar_close()"><span class="glyphicon glyphicon-stats"></span> &ensp; TECHNOLOGIES</a></li>
+            <li id="toProject"><a href="#project" class="w3-bar-item w3-button" onclick="navbar_close()"><span class="glyphicon glyphicon-cog"></span> &ensp; PROJECTS</a></li>
+            <li id="toContact"><a href="#contact" class="w3-bar-item w3-button" onclick="navbar_close()"><span class="glyphicon glyphicon-envelope"></span> &ensp; CONTACT</a></li>
+        </ul>
+    </div>
+
+    <nav class="navbar navbar-fixed-top w3-hide-large" id="myNavBar2">
+        <button class="w3-button w3-xlarge w3-hide-large" onclick="navbar_open()"> &#9776; </button>
+    </nav>
+
+    <!--Main Content of the page-->
+
+    <div class="w3-main" id="main">
+
+        <!--intro page with the text and button-->
+
+        <section id="homePage">
+
+            <div class="container" id="homeHeading">
+                <p>
+                    The Mark of a <span id="homeSpan1">True Professional</span><br />
+                    is giving <span id="homeSpan2">more than you get</span>.
+                </p>
+            </div>
+
+            <a href="#aboutMe" class="btn w3-xlarge" id="knowMore" role="button">KNOW MORE</a>
+
+            <div class="container" id="introduction">
+                Ananya Mitra<br />
+                <em>--Program Analyst Trainee</em><br />
+                Cognizant Technology Solutions
+            </div>
+
+        </section>
+
+        <!--about me page-->
+
+        <section id="aboutMe">
+
+            <h3 class="headingLarge">ABOUT ME</h3>
+
+            <div class="container-fluid">
+                <center>
+                    <img class="img-circle" src="Pictures/profile.jpg" id="profilePic" />
+                </center>
+
+                <div class="container-fluid" style="padding-bottom:50px;padding-left:30px;padding-right:30px">
+                    Hi! Welcome to my page. This is Ananya Mitra. I am training to be a full stack developer at Cognizant Academy. I have completed about a month of training with still around two months to go.
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!--education page-->
+
+        <section id="education">
+
+            <h3 class="headingLarge">ACADEMIC DETAILS</h3>
+
+            <!--Thumbnails with the institute details-->
+
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <center>
+                        <div class="thumbnail">
+                            <img src="Pictures/Loreto.jpg" alt="Loreto Day School" />
+                            <div class="container-fluid" id="thumbnailText1">
+                                <p><strong>HIGHER SECONDARY</strong></p>
+                                <p>12th in Science Stream</p>
+                                <p>Loreto Day School Bowbazar</p>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+
+                <div class="col-md-4">
+                    <center>
+                        <div class="thumbnail">
+                            <img src="Pictures/Gnit.jpg" alt="Gurunanak Institute of Technology" />
+                            <div class="container-fluid" id="thumbnailText2">
+                                <p><strong>GRADUATE</strong></p>
+                                <p>B.Tech in Computer Science</p>
+                                <p>Gurunanak Institute of Technology</p>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+
+                <div class="col-md-4">
+                    <center>
+                        <div class="thumbnail">
+                            <img src="Pictures/Iem.jpg" alt="Institue of Engineering and Management" />
+                            <div class="container-fluid" id="thumbnailText3">
+                                <p><strong>POST GRADUATE</strong></p>
+                                <p>M.Tech in Computer Science</p>
+                                <p>Institue of Engineering and Management</p>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--Skillset page: technologies-->
+
+        <section id="technology">
+
+            <h3 class="headingLarge">KNOWN TECHNOLOGIES</h3>
+
+            <!--Cards with mentioning the technologies that are known with progress bars-->
+
+            <div class="container-fluid" id="cardContainer">
+
+                <!--First Row-->
+
+                <div class="row">
+
+                    <div class="col-md-4 cardHolders">
+                        <center>
+                            <div class="card">
+                                <img src="Pictures/html5.png" alt="Avatar" style="width:100%">
+                                <div class="holdProgress">
+                                    <div class="w3-light-grey w3-round-xlarge">
+                                        <div class="w3-container w3-deep-orange w3-round-xlarge" style="width:65%">65%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+
+                    <div class="col-md-4 cardHolders">
+                        <center>
+                            <div class="card">
+                                <img src="Pictures/css3.jpg" alt="Avatar" style="width:100%;height:250px">
+                                <div class="holdProgress">
+                                    <div class="w3-light-grey w3-round-xlarge">
+                                        <div class="w3-container w3-blue w3-round-xlarge" style="width:70%">70%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+
+                    <div class="col-md-4 cardHolders">
+                        <center>
+                            <div class="card">
+                                <img src="Pictures/javascript.png" alt="Avatar" style="width:100%;height:250px">
+                                <div class="holdProgress">
+                                    <div class="w3-light-grey w3-round-xlarge">
+                                        <div class="w3-container w3-light-green w3-round-xlarge" style="width:45%"><span style="color:white">45%</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+
+                </div>
+
+                <!--Second Row-->
+
+                <div class="row">
+
+                    <div class="col-md-4 col-md-push-2 cardHolders">
+                        <center>
+                            <div class="card">
+                                <img src="Pictures/jquery.png" alt="Avatar" style="width:100%;height:250px">
+                                <div class="holdProgress">
+                                    <div class="w3-light-grey w3-round-xlarge">
+                                        <div class="w3-container w3-amber w3-round-xlarge" style="width:25%"><span style="color:white">25%</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+
+                    <div class="col-md-4 col-md-push-2 cardHolders">
+                        <center>
+                            <div class="card">
+                                <img src="Pictures/bootstrap.png" alt="Avatar" style="width:100%;height:250px">
+                                <div class="holdProgress">
+                                    <div class="w3-light-grey w3-round-xlarge">
+                                        <div class="w3-container w3-deep-purple w3-round-xlarge" style="width:60%">60%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--Projects page-->
+
+        <section id="project">
+
+            <h3 class="headingLarge">PROJECTS DONE</h3>
+
+        </section>
+
+
+        <!--contact page-->
+
+        <section id="contact">
+
+            <h3 class="headingLarge">CONTACT ME</h3>
+
+
+            <div class="row test text-center">
+                <div class="col-md-6 col-md-push-3" style="padding-bottom:100px">
+                    <em>Get Connected.</em><br /><br /><br />
+                    <p><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Address: Kolkata, India</p>
+                    <p><span class="glyphicon glyphicon-phone"></span>&nbsp; Phone: +91 ##########</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span>&nbsp; Email: AnanyaMitra@cognizant.com</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--footer-->
+        <section id="footer">
+
+            <center>
+                <a id="backToTop" href="#homePage" data-toggle="tooltip">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </a><br><br>
+                <p id="footerText"><b>BACK TO THE TOP</b></p>
+            </center>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
